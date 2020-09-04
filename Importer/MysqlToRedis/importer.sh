@@ -1,0 +1,1 @@
+mysql -h 10.10.10.10 -ureadonly -preadonly -Djanusgraph --default-character-set=utf8 --skip-column-names --raw < /home/bread/redis/bin/vertexIDPairs.sql | /home/bread/redis/bin/redis-cli -h 10.10.10.1 -p 16379 --pipe
